@@ -846,6 +846,7 @@ border-color: var(--hover-color);
 
 .modal-form-submit {
     display: block;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
