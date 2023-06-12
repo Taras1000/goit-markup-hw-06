@@ -815,7 +815,7 @@ border-color: var(--hover-color);
     margin-bottom: 24px;
 }
 
-.modal-form-check:checked {
+.modal-form-check:checked + .modal-form-check-desc span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
