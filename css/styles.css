@@ -815,6 +815,12 @@ border-color: var(--hover-color);
     margin-bottom: 24px;
 }
 
+.modal-form-check:checked {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
 .modal-form-check-desc {
     font-size: 12px;
     line-height: 1.17;
