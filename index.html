@@ -65,7 +65,6 @@
 
                                 </use>
                             </svg>
-
                         </div>
                         <h3 class="features-item-title">Strategy</h3>
                         <p class="features-text">Our goal is to identify the business
@@ -78,7 +77,6 @@
 
                                 </use>
                             </svg>
-
                         </div>
                         <h3 class="features-item-title">Punctuality</h3>
                         <p class="features-text">Bring the key message to the brand's audience for the best price within
@@ -93,7 +91,6 @@
 
                                 </use>
                             </svg>
-
                         </div>
                         <h3 class="features-item-title">Diligence</h3>
                         <p class="features-text">Research and confirm brands that present the strongest digital growth
@@ -107,7 +104,6 @@
 
                                 </use>
                             </svg>
-
                         </div>
                         <h3 class="features-item-title">Technologies</h3>
                         <p class="features-text">Design practice focused on digital experiences. We bring forth a deep
@@ -174,9 +170,9 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
+
                     <li class="team-item">
                         <img class="team-item-img" src="./images/tom.jpg" alt="Tom Ford" width="264" height="260">
                         <div class="team-card">
@@ -212,9 +208,9 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
+
                     <li class="team-item">
                         <img class="team-item-img" src="./images/camila.jpg" alt="Camila Garcia" width="264"
                             height="260">
@@ -251,9 +247,9 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
+
                     <li class="team-item">
                         <img class="team-item-img" src="./images/daniel.jpg" alt="Daniel Wilson" width="264"
                             height="260">
@@ -290,9 +286,9 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
+
                 </ul>
             </div>
         </section>
@@ -360,8 +356,8 @@
                 </ul>
             </div>
 
-
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -405,15 +401,27 @@
                         </a>
                     </li>
                 </ul>
-
             </div>
-
+            <div class="footer-form">
+                <p class="footer-form-text">Subscribe</p>
+                <form class="subscribe-form">
+                    <label class="footer-form-field">
+                        <input class="footer-input" name="email" minlength="3" pattern="[a-z]" type="email"
+                            placeholder="E-mail" />
+                    </label>
+                    <button type="submit" class="footer-button">Subscribe
+                        <svg class="footer-button-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-subscribe-icon"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
     <!-- Modal-window -->
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
@@ -453,7 +461,7 @@
                 </div>
                 <div class="modal-comment-field">
                     <label for="user-comment" class="modal-form-field">Comment</label>
-                    <textarea id="user-comment" name="user-comment" class="modal-comment modal-input"
+                    <textarea id="user-comment" name="user-comment" class="modal-comment"
                         placeholder="Text input"></textarea>
                 </div>
                 <div class="modal-checkbox">
