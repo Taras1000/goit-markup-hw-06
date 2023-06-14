@@ -12,7 +12,7 @@
     --link-color: #2E2F42;
     --address-link-color: #434455;
     --hero-button-color: #FFFFFF;
-    --hero-btn-background-color: #4D5AE5;
+    --button-color: #4D5AE5;
     --first-title-color: #FFFFFF;
     --second-title-color: #2E2F42;
     --team-item-background-color: #FFFFFF;
@@ -24,7 +24,6 @@
     --footer-text-color: #F4F4FD;
     --footer-logo-color: #4D5AE5;
     --footer-logo-style-color: #F4F4FD;
-    --about-button-color: #4D5AE5;
     --about-button-background-color: #F4F4FD;
     --about-button-hover-color: #FFFFFF;
     --border: #e7e9fc;
@@ -37,6 +36,7 @@
     --cover-background-color: #4D5AE5;
     --label-color: #8e8f99;
     --checkbox-link-color: #4d5ae5;
+    --modal-icon-color: #2E2F42;
 }
 
 body {
@@ -210,7 +210,7 @@ color: var(--hover-color);
     line-height: 1.50;
     letter-spacing: 0.04em;
     color: var(--hero-button-color);
-    background-color: var(--hero-btn-background-color);
+    background-color: var(--button-color);
     cursor: pointer;
     display: block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -597,9 +597,14 @@ border-color: var(--hover-color);
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    background-color: #4D5AE5;
+    background-color: var(--button-color);
     border: none;
     border-radius: 4px;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    background-color: var(--hover-color);
 }
 
 .footer-button-icon {
@@ -646,7 +651,7 @@ border-color: var(--hover-color);
     font-size: 16px;
     line-height: 1.50;
     letter-spacing: 0.04em;
-    color: var(--about-button-color);
+    color: var(--button-color);
     background-color: var(--about-button-background-color);
     cursor: pointer;
     padding: 12px 24px;
@@ -762,7 +767,7 @@ border-color: var(--hover-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close {
+.modal-close-button {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -779,9 +784,9 @@ border-color: var(--hover-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover,
-.modal-close:focus {
-    background-color: #404bbf;
+.modal-close-button:hover,
+.modal-close-button:focus {
+    background-color: var(--hover-color);
     border: none;
     fill: #ffffff;
 }
@@ -842,6 +847,7 @@ border-color: var(--hover-color);
     position: absolute;
     left: 16px;
     top: 50%;
+    fill: var(--modal-icon-color);
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -864,6 +870,7 @@ border-color: var(--hover-color);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
+    display: block;
     padding: 8px 16px;
     outline: transparent;
     resize: none;
@@ -901,13 +908,14 @@ border-color: var(--hover-color);
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .checkbox-link {
     color: var(--checkbox-link-color);
 }
 
-.modal-form-submit {
+.modal-submit-button {
     display: block;
     margin: 0 auto;
     min-width: 169px;
@@ -919,9 +927,12 @@ border-color: var(--hover-color);
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    background-color: #4D5AE5;
+    background-color: var(--button-color);
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+    background-color: var(--hover-color);
+}
